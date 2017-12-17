@@ -51,8 +51,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :csalunet, Csalunet.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "swarut",
+  password: "",
   database: "csalunet_dev",
   hostname: "localhost",
   pool_size: 10
