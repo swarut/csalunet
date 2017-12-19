@@ -20,7 +20,7 @@ defmodule Csalunet.Mixfile do
   def application do
     [
       mod: {Csalunet.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :ueberauth_facebook]
     ]
   end
 
@@ -41,7 +41,9 @@ defmodule Csalunet.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:facebook, "~> 0.17.0"}
+      {:facebook, "~> 0.17.0"},
+      {:ueberauth, "~> 0.4"},
+      {:ueberauth_facebook, "~> 0.7"}
     ]
   end
 

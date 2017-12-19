@@ -1,0 +1,8 @@
+<h2>Show Auth</h2>
+
+<ul>
+
+</ul>
+
+<span><%= link "Edit", to: auth_path(@conn, :edit, @auth) %></span>
+<span><%= link "Back", to: auth_path(@conn, :index) %></span>

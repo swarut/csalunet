@@ -1,0 +1,5 @@
+<h2>New Auth</h2>
+
+<%= render "form.html", Map.put(assigns, :action, auth_path(@conn, :create)) %>
+
+<span><%= link "Back", to: auth_path(@conn, :index) %></span>

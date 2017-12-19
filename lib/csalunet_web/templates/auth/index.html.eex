@@ -1,0 +1,10 @@
+<h2>Listing Auths</h2>
+
+<table class="table">
+AUTH
+
+<a href='/auth/facebook'>
+  Login by facebook
+</a>
+</table>
+
