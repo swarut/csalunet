@@ -15,16 +15,17 @@ defmodule CsalunetWeb.Router do
 
   scope "/", CsalunetWeb do
     pipe_through :browser # Use the default browser stack
-
-    resources "/auths", AuthController
-
-    get "/:provider", AuthController, :request
-    get "/:provider/callback", AuthController, :callback
+    
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", CsalunetWeb do
-  #   pipe_through :api
-  # end
+  scope "/auth", CsalunetWeb do
+    pipe_through :browser
+
+    get "/:provider", AuthController, :request
+    get "/:provider/callback", AuthController, :callback
+    post "/:provider/callback", AuthController, :callback
+    delete "/logout", AuthController, :delete
+  end
+
 end
